@@ -1,0 +1,348 @@
+/* =======================================================
+   style.css - Estilos personalizados para Alcalá Magna
+   ======================================================= */
+
+/* ------------------------
+   VARIABLES CSS (para consistencia de color)
+------------------------ */
+:root {
+  --primary-color: #000000;
+  --secondary-color: #6c757d;
+  --text-color: #343a40;
+  --light-bg-color: #f2f2f2;
+  --dark-bg-color: #212529;
+  --nav-bg-color: #ffffff;
+  --nav-link-color: #000000;
+  --border-color: #dee2e6;
+  --hover-color: #0056b3;
+  --footer-link-color: #000000;
+}
+
+/* ------------------------
+   FUENTE GENERAL
+------------------------ */
+body {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  background-color: var(--light-bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+main {
+    flex: 1;
+}
+
+/* ------------------------
+   TIPOGRAFÍA
+------------------------ */
+h1, h2, h3, h4, h5 {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+h1 {
+    font-size: 2.8rem;
+    text-align: center;
+}
+h2 {
+    font-size: 2.2rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+p {
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+strong {
+  font-weight: 600;
+}
+
+/* ------------------------
+   ENLACES
+------------------------ */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+}
+
+/* ------------------------
+   BOTONES
+------------------------ */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.75rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+.btn-primary:hover {
+  background-color: var(--hover-color);
+  border-color: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+button img {
+    cursor: pointer;
+}
+
+/* ------------------------
+   NAVBAR
+------------------------ */
+.navbar {
+  background-color: var(--nav-bg-color) !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: var(--nav-link-color) !important;
+  transition: color 0.3s ease-in-out;
+}
+.navbar-nav .nav-link {
+  color: var(--nav-link-color);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--nav-link-color);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-logo {
+  height: 80px;
+  max-width: 180px;
+}
+
+/* ------------------------
+   CARRUSEL
+------------------------ */
+.carousel-item img {
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* ------------------------
+   SECCIONES GENERALES
+------------------------ */
+section {
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+section:nth-child(even) {
+  background-color: var(--light-bg-color);
+}
+
+/* ------------------------
+   TARJETAS (Cards)
+------------------------ */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+/* Estilo para los botones dentro de las tarjetas */
+.card .btn-primary {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
+/* ------------------------
+   MODALES (Popups)
+------------------------ */
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  background-color: #ffffff;
+}
+.modal-header {
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem;
+}
+.modal-title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+.modal-body {
+    padding: 1.5rem;
+    line-height: 1.6;
+}
+.modal-footer {
+    border-top: 1px solid var(--border-color);
+    padding: 1rem 1.5rem;
+}
+
+/* ------------------------
+   FORMULARIOS (index + contacto)
+------------------------ */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+/* Botón del formulario */
+form .btn {
+  padding: 0.9rem 2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+}
+
+
+/* ------------------------
+   FOOTER
+------------------------ */
+footer {
+  width: 100%;
+  margin-top: auto;
+  padding: 2.5rem 0;
+  background: var(--dark-bg-color);
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+footer a {
+  color: var(--footer-link-color);
+  margin: 0 0.5rem;
+  transition: color 0.3s ease-in-out;
+}
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+small {
+    font-size: 0.9rem;
+}
+
+/* ------------------------
+   OTRAS SECCIONES ESPECÍFICAS (ej. Visítanos, Aviso Legal)
+------------------------ */
+.accordion-button {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+    font-weight: 600;
+    border-radius: 0.5rem !important;
+    transition: background-color 0.3s ease-in-out;
+}
+.accordion-button:hover {
+    background-color: var(--hover-color) !important;
+}
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+.accordion-collapse {
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+    padding: 1rem;
+    background-color: #fff;
+}
+.accordion-item {
+    margin-bottom: 1rem;
+    border: none;
+}
+
+/* Contenedor de video en index.html */
+.video-container {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.video-container video {
+    border-radius: 12px;
+}
+
+
+/* Iconos de ventajas en Visitanos.html */
+.list-unstyled li {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+.list-unstyled li i {
+    color: var(--primary-color);
+    margin-right: 0.8rem;
+    font-size: 1.3rem;
+}

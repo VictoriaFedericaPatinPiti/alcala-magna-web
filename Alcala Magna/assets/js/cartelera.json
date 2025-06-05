@@ -1,0 +1,38 @@
+[
+  {
+    "titulo": "Until Down",
+    "descripcion": "Un grupo de amigas revive una pesadilla en un valle remoto, atrapadas en un bucle temporal con un asesino diferente cada noche. Deben sobrevivir hasta el amanecer.",
+    "imagen": "https://tickets-static-content.cinepolis.com/pimcore/3922/assets/Espaa/Tickets/Movies/UntilDawn/Es/UD_720x1022_3/resource.jpg",
+    "enlace": "https://cinepolis.com/es/detalle?cinema=rivas-h2o-madrid&movie=until-dawn"
+  },
+  {
+    "titulo": "Tiempo de guerra",
+    "descripcion": "Un pelotón de Navy SEALs en Irak enfrenta una misión de vigilancia que se tuerce. Una historia visceral sobre la guerra moderna y la hermandad, contada en tiempo real.",
+    "imagen": "https://tickets-static-content.cinepolis.com/pimcore/3920/assets/Espaa/Tickets/Movies/WarfareTiempoDeGuerra/Es/720x1022_6/resource.jpg",
+    "enlace": "https://cinepolis.com/es/detalle?movie=warfare-tiempo-de-guerra"
+  },
+  {
+    "titulo": "Thunderbolts",
+    "descripcion": "Un grupo de supervillanos es reclutado por el gobierno para misiones peligrosas, obligándolos a enfrentar los recovecos más oscuros de su pasado.",
+    "imagen": "https://tickets-static-content.cinepolis.com/pimcore/3747/assets/Espaa/Tickets/Movies/Thunderbolts/Es/Po_ster_720x1022px_4/resource.jpg",
+    "enlace": "https://cinepolis.com/es/detalle?cinema=rivas-h2o-madrid&movie=thunderbolts"
+  },
+  {
+    "titulo": "Amateur",
+    "descripcion": "Un brillante decodificador de la CIA busca venganza por la muerte de su esposa, embarcándose en una peligrosa misión para localizar a los responsables.",
+    "imagen": "https://tickets-static-content.cinepolis.com/pimcore/3645/assets/Espaa/Tickets/Movies/Amateur/Es/720x1022_2__1/resource.jpg",
+    "enlace": "https://cinepolis.com/es/detalle?cinema=rivas-h2o-madrid&movie=amateur"
+  },
+  {
+    "titulo": "Los pecadores",
+    "descripcion": "Dos hermanos gemelos regresan a su ciudad natal en los años 30, solo para descubrir que un poder maligno y temible aguarda su regreso.",
+    "imagen": "https://tickets-static-content.cinepolis.com/pimcore/3643/assets/Espaa/Tickets/Movies/LosPecadores/Es/P_720X1022_2_1__1/resource.jpg",
+    "enlace": "https://cinepolis.com/es/detalle?cinema=rivas-h2o-madrid&movie=los-pecadores"
+  },
+  {
+    "titulo": "Conclave",
+    "descripcion": "Tras la muerte del Papa, el cardenal Lawrence lidera el cónclave para elegir a su sucesor, viéndose atrapado en una conspiración que sacude a la Iglesia.",
+    "imagen": "https://tickets-static-content.cinepolis.com/pimcore/3383/assets/Espaa/Tickets/Movies/Conclave/Es/CONCLAVE_DESKTOP_POSTER_720x1022_3/resource.png",
+    "enlace": "https://cinepolis.com/es/detalle?cinema=rivas-h2o-madrid&movie=conclave"
+  }
+]
